@@ -406,6 +406,17 @@ header .fa-heart {
 }
 
 /* =============== media query ===============*/
+@media screen and (max-width: 400px) {
+  .instagram-story-container {
+    margin: 0;
+    border-radius: 0;
+    border: none;
+  }
+  .insta-box {
+    margin-top: 10px;
+    border-radius: 0;
+  }
+}
 
 @media screen and (max-width: 500px) {
   .instagram-story-container {
@@ -442,7 +453,7 @@ header .fa-heart {
   }
   .row-container {
     margin: auto;
-    width: 98%;
+    width: 100%;
   }
 }
 
