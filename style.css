@@ -421,7 +421,17 @@ header .fa-heart {
 @media screen and (max-width: 500px) {
   .instagram-story-container {
     max-width: 100%;
-    margin-top: 0.5rem;
+    margin: 0;
+    border-radius: 0;
+    border: none;
+  }
+  .insta-box {
+    margin-top: 10px;
+    border-radius: 0;
+  }
+
+  .img-container img {
+    height: 500px;
   }
 }
 
