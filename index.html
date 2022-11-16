@@ -26,557 +26,683 @@
     />
     <link
       rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
       integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S81n"
       crossorigin="anonymous"
     />
   </head>
   <body>
-    <header>
-      <img src="images/images.png" />
-      <i class="fa-regular fa-heart"></i>
-    </header>
+    <div class="modal-container">
+      <div class="modal">
+        <div class="modal-share">
+          <div class="modal-share-header">
+            <h5>Paylas</h5>
 
-    <aside class="insta-home">
-      <img class="logo" src="images/images.png" />
-
-      <div class="insta-home-icons">
-        <div class="icons-box1">
-          <i class="fa-brands fa-instagram"></i>
-        </div>
-
-        <div class="icons-box">
-          <i class="fa-sharp fa-solid fa-house"></i>
-          <p>Ana Sayfa</p>
-        </div>
-
-        <div class="icons-box">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <p>Kesfet</p>
-        </div>
-
-        <div class="icons-box">
-          <i class="fa-regular fa-comment"></i>
-          <p>Mesajlar</p>
-        </div>
-
-        <div class="icons-box">
-          <i class="fa-regular fa-heart"></i>
-          <p>Bildirimler</p>
-        </div>
-
-        <div class="icons-box">
-          <i class="fa-regular fa-square-plus"></i>
-          <p>Olustur</p>
-        </div>
-
-        <div class="icons-box">
-          <img src="images/IMG_2599%20(1).png" />
-          <p>Profil</p>
-        </div>
-
-        <div class="icons-boxx">
-          <i class="fa-solid fa-bars"></i>
-          <p>Daha Fazla</p>
-        </div>
-      </div>
-    </aside>
-
-    <div class="row-container">
-      <div class="insta-container">
-        <div class="instagram-story-container">
-          <div class="instagram-story">
-            <div class="story1">
-              <img src="images/kisi1.jpeg " />
-              <p>aysuerturk</p>
-            </div>
-
-            <div class="story1">
-              <img src="images/kisi2.jpeg " />
-              <p>burcucetin</p>
-            </div>
-
-            <div class="story1">
-              <img src="images/kisi3.jpeg " />
-              <p>selinyurt</p>
-            </div>
-
-            <div class="story1">
-              <img src="images/kisi4.jpeg " />
-              <p>aysebelin</p>
-            </div>
-
-            <div class="story1">
-              <img src="images/kisi5.jpeg " />
-              <p>edaece</p>
-            </div>
-
-            <div class="story1">
-              <img src="images/kisi6.jpeg " />
-              <p>senemkeskin</p>
-            </div>
-
-            <div class="story1">
-              <img src="images/kisi7.jpeg " />
-              <p>busetturk</p>
-            </div>
-
-            <div class="story1">
-              <img src="images/kisi8.jpeg " />
-              <p>haleuygun</p>
-            </div>
-
-            <div class="story1">
-              <img src="images/kisi9.jpeg" />
-              <p>ozgemengi</p>
-            </div>
-
-            <div class="story1">
-              <img src="images/kisi10.jpeg " />
-              <p>ezgikoc</p>
-            </div>
-
-            <div class="story1">
-              <img src="images/kisi11.jpeg" />
-              <p>denizask</p>
-            </div>
-
-            <div class="story1">
-              <img src="images/kisi12.jpeg " />
-              <p>busrapekin</p>
-            </div>
-
-            <div class="story1">
-              <img
-                src="images/Outfits%20épicos%20para%20tu%20regreso%20al%20exterior.jpeg "
-              />
-              <p>asliparali</p>
-            </div>
+            <i class="fa-solid fa-xmark" id="close-btn"></i>
           </div>
         </div>
 
-        <div class="container">
-          <article class="insta-box">
-            <div class="ins-navbar">
-              <div class="nav-person">
-                <img src="images/kisi12.jpeg" />
-                <h6>pelinsakklim</h6>
-              </div>
-              <div class="nav-options">
-                <i class="fa-solid fa-ellipsis"></i>
-              </div>
-            </div>
+        <div class="modal-person">
+          <h4 class="person-name">Kime:</h4>
+          <input type="text" placeholder="Ara..." />
+        </div>
 
-            <svg
-              aria-hidden="true"
-              style="position: absolute; width: 0; height: 0; overflow: hidden"
-              version="1.1"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-            >
-              <defs>
-                <symbol id="icon-heart" viewBox="0 0 32 32">
-                  <path
-                    d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"
-                  ></path>
-                </symbol>
-              </defs>
-            </svg>
+        <div class="suggestions-header">
+          <div class="suggestion">
+            <p>Önerilenler</p>
+          </div>
 
-            <div class="img-container">
-              <div class="post">
-                <svg class="icon icon-heart">
-                  <use xlink:href="#icon-heart"></use>
-                </svg>
-                <img class="imgIcon" src="images/1.jpeg" />
-              </div>
-            </div>
-
-            <div class="insta-container-icons">
-              <div class="like">
-                <i class="fa-regular fa-heart"></i>
-
-                <i class="fa-regular fa-comment"></i>
-                <i class="fa-regular fa-paper-plane"></i>
-              </div>
-              <div class="save">
-                <i class="fa-regular fa-bookmark"></i>
-              </div>
-            </div>
-
-            <div class="likes">
-              <img src="images/kisi1.jpeg" />
-              <p><b>kayacansu</b> ve <b>diger kisiler</b> begendi</p>
-            </div>
-
-            <div class="comment">
-              <p>673 yorumun tumunu gor</p>
-              <p class="before">2 SAAT ONCE</p>
-            </div>
-          </article>
-
-          <article class="insta-box">
-            <div class="ins-navbar">
-              <div class="nav-person">
-                <img src="images/kisi11.jpeg" />
-                <h6>pelinnaksuu</h6>
-              </div>
-              <div class="nav-options">
-                <i class="fa-solid fa-ellipsis"></i>
-              </div>
-            </div>
-
-            <div class="img-container">
-              <div class="post">
-                <svg class="icon icon-heart">
-                  <use xlink:href="#icon-heart"></use>
-                </svg>
-                <img class="imgIcon" src="images/2.jpeg" />
-              </div>
-            </div>
-
-            <div class="insta-container-icons">
-              <div class="like">
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-regular fa-comment"></i>
-                <i class="fa-regular fa-paper-plane"></i>
-              </div>
-              <div class="save">
-                <i class="fa-regular fa-bookmark"></i>
-              </div>
-            </div>
-
-            <div class="likes">
-              <img src="images/kisi4.jpeg" />
-              <p><b>yareturk</b> ve <b>diger kisiler</b> begendi</p>
-            </div>
-
-            <div class="comment">
-              <p>73 yorumun tumunu gor</p>
-              <p class="before">2 SAAT ONCE</p>
-            </div>
-          </article>
-
-          <article class="insta-box">
-            <div class="ins-navbar">
-              <div class="nav-person">
-                <img src="images/kisi8.jpeg" />
-                <h6>vaguemgzin</h6>
-              </div>
-              <div class="nav-options">
-                <i class="fa-solid fa-ellipsis"></i>
-              </div>
-            </div>
-
-            <div class="img-container">
-              <div class="post">
-                <svg class="icon icon-heart">
-                  <use xlink:href="#icon-heart"></use>
-                </svg>
-                <img class="imgIcon" src="images/9.jpeg" />
-              </div>
-            </div>
-
-            <div class="insta-container-icons">
-              <div class="like">
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-regular fa-comment"></i>
-                <i class="fa-regular fa-paper-plane"></i>
-              </div>
-              <div class="save"><i class="fa-regular fa-bookmark"></i></div>
-            </div>
-
-            <div class="likes">
-              <img src="images/kisi12.jpeg" />
-              <p><b>rosiewhile</b> ve <b>diger kisiler</b> begendi</p>
-            </div>
-
-            <div class="comment">
-              <p>789 yorumun tumunu gor</p>
-              <p class="before">2 SAAT ONCE</p>
-            </div>
-          </article>
-
-          <article class="insta-box">
-            <div class="ins-navbar">
-              <div class="nav-person">
-                <img src="images/kisi10.jpeg" />
-                <h6>sevvalsikilaz</h6>
-              </div>
-              <div class="nav-options">
-                <i class="fa-solid fa-ellipsis"></i>
-              </div>
-            </div>
-
-            <div class="img-container">
-              <div class="post">
-                <svg class="icon icon-heart">
-                  <use xlink:href="#icon-heart"></use>
-                </svg>
-                <img class="imgIcon" src="images/4.jpeg" />
-              </div>
-            </div>
-
-            <div class="insta-container-icons">
-              <div class="like">
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-regular fa-comment"></i>
-                <i class="fa-regular fa-paper-plane"></i>
-              </div>
-              <div class="save"><i class="fa-regular fa-bookmark"></i></div>
-            </div>
-
-            <div class="likes">
-              <img src="images/kisi9.jpeg" />
-              <p><b>yaseminn</b> ve <b>diger kisiler</b> begendi</p>
-            </div>
-
-            <div class="comment">
-              <p>15 yorumun tumunu gor</p>
-              <p class="before">2 SAAT ONCE</p>
-            </div>
-          </article>
-
-          <article class="insta-box">
-            <div class="ins-navbar">
-              <div class="nav-person">
-                <img src="images/kisi9.jpeg" />
-                <h6>gozdekucukler</h6>
-              </div>
-              <div class="nav-options">
-                <i class="fa-solid fa-ellipsis"></i>
-              </div>
-            </div>
-
-            <div class="img-container">
-              <div class="post">
-                <svg class="icon icon-heart">
-                  <use xlink:href="#icon-heart"></use>
-                </svg>
-                <img class="imgIcon" src="images/5.png" />
-              </div>
-            </div>
-
-            <div class="insta-container-icons">
-              <div class="like">
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-regular fa-comment"></i>
-                <i class="fa-regular fa-paper-plane"></i>
-              </div>
-              <div class="save"><i class="fa-regular fa-bookmark"></i></div>
-            </div>
-
-            <div class="likes">
-              <img src="images/IMG_2599%20(1).png" />
-              <p><b>busecambaz</b> ve <b>diger kisiler</b> begendi</p>
-            </div>
-
-            <div class="comment">
-              <p>48 yorumun tumunu gor</p>
-              <p class="before">2 SAAT ONCE</p>
-            </div>
-          </article>
-
-          <article class="insta-box">
-            <div class="ins-navbar">
-              <div class="nav-person">
-                <img src="images/kisi6.jpeg" />
-                <h6>gizemcambaz</h6>
-              </div>
-              <div class="nav-options">
-                <i class="fa-solid fa-ellipsis"></i>
-              </div>
-            </div>
-
-            <div class="img-container">
-              <div class="post">
-                <svg class="icon icon-heart">
-                  <use xlink:href="#icon-heart"></use>
-                </svg>
-                <img class="imgIcon" src="images/6.jpeg" />
-              </div>
-            </div>
-
-            <div class="insta-container-icons">
-              <div class="like">
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-regular fa-comment"></i>
-                <i class="fa-regular fa-paper-plane"></i>
-              </div>
-              <div class="save"><i class="fa-regular fa-bookmark"></i></div>
-            </div>
-
-            <div class="likes">
-              <img src="images/kisi4.jpeg" />
-              <p><b>asyakorkmaz</b> ve <b>diger kisiler</b> begendi</p>
-            </div>
-
-            <div class="comment">
-              <p>27 yorumun tumunu gor</p>
-              <p class="before">2 SAAT ONCE</p>
-            </div>
-          </article>
-
-          <article class="insta-box">
-            <div class="ins-navbar">
-              <div class="nav-person">
-                <img src="images/kisi3.jpeg" />
-                <h6>sultanbakir</h6>
-              </div>
-              <div class="nav-options">
-                <i class="fa-solid fa-ellipsis"></i>
-              </div>
-            </div>
-
-            <div class="img-container">
-              <div class="post">
-                <svg class="icon icon-heart">
-                  <use xlink:href="#icon-heart"></use>
-                </svg>
-                <img class="imgIcon" src="images/kisi12.jpeg" />
-              </div>
-            </div>
-
-            <div class="insta-container-icons">
-              <div class="like">
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-regular fa-comment"></i>
-                <i class="fa-regular fa-paper-plane"></i>
-              </div>
-              <div class="save"><i class="fa-regular fa-bookmark"></i></div>
-            </div>
-
-            <div class="likes">
+          <div class="insta-follow-header2">
+            <div class="follow-left">
               <img src="images/kisi2.jpeg" />
-              <p><b>ezgibaris</b> ve <b>diger kisiler</b> begendi</p>
-            </div>
-
-            <div class="comment">
-              <p>112 yorumun tumunu gor</p>
-              <p class="before">2 SAAT ONCE</p>
-            </div>
-          </article>
-
-          <article class="insta-box">
-            <div class="ins-navbar">
-              <div class="nav-person">
-                <img src="images/kisi5.jpeg" />
-                <h6>yaseminklaz</h6>
-              </div>
-              <div class="nav-options">
-                <i class="fa-solid fa-ellipsis"></i>
+              <div class="insta-name">
+                <h6>sedefmese</h6>
+                <p>sedeffmesee</p>
               </div>
             </div>
+            <input type="checkbox" class="input" />
+          </div>
 
-            <div class="img-container">
-              <div class="post">
-                <svg class="icon icon-heart">
-                  <use xlink:href="#icon-heart"></use>
-                </svg>
-                <img class="imgIcon" src="images/8.jpeg" />
+          <div class="insta-follow-header2">
+            <div class="follow-left">
+              <img src="images/kisi12.jpeg" />
+              <div class="insta-name">
+                <h6>aysenurkilaz</h6>
+                <p>aysennurkilaz</p>
               </div>
             </div>
+            <input type="checkbox" class="input" />
+          </div>
 
-            <div class="insta-container-icons">
-              <div class="like">
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-regular fa-comment"></i>
-                <i class="fa-regular fa-paper-plane"></i>
+          <div class="insta-follow-header2">
+            <div class="follow-left">
+              <img src="images/kisi4.jpeg" />
+              <div class="insta-name">
+                <h6>laleoksuz</h6>
+                <p>oksuzzlale</p>
               </div>
-              <div class="save"><i class="fa-regular fa-bookmark"></i></div>
             </div>
+            <input type="checkbox" class="input" />
+          </div>
 
-            <div class="likes">
+          <div class="insta-follow-header2">
+            <div class="follow-left">
+              <img src="images/kisi9.jpeg" />
+              <div class="insta-name">
+                <h6>sedefsayarr</h6>
+                <p>sedfsayr</p>
+              </div>
+            </div>
+            <input type="checkbox" class="input" />
+          </div>
+
+          <div class="insta-follow-header2">
+            <div class="follow-left">
+              <img src="images/kisi8.jpeg" />
+              <div class="insta-name">
+                <h6>melisakarabulut</h6>
+                <p>melissaakarabulut</p>
+              </div>
+            </div>
+            <input type="checkbox" class="input" />
+          </div>
+
+          <div class="insta-follow-header2">
+            <div class="follow-left">
               <img src="images/kisi11.jpeg" />
-              <p><b>ravzaklz</b> ve <b>diger kisiler</b> begendi</p>
+              <div class="insta-name">
+                <h6>devecimedine</h6>
+                <p>medinedevecii</p>
+              </div>
             </div>
+            <input type="checkbox" class="input" />
+          </div>
 
-            <div class="comment">
-              <p>73 yorumun tumunu gor</p>
-              <p class="before">2 SAAT ONCE</p>
+          <div class="insta-follow-header2">
+            <div class="follow-left">
+              <img src="images/kisi5.jpeg" />
+              <div class="insta-name">
+                <h6>aysegulturgutlu</h6>
+                <p>aysegullturgutluu</p>
+              </div>
             </div>
-          </article>
+            <input type="checkbox" class="input" />
+          </div>
+        </div>
+
+        <div class="modal-submit">
+          <button type="submit" id="button-submit" disabled="disabled">
+            Gonder
+          </button>
         </div>
       </div>
-
-      <article class="insta-follow">
-        <div class="insta-follow-header">
-          <div class="follow-left">
-            <img src="images/IMG_2599%20(1).png" />
-            <div class="insta-name">
-              <h6>busecambaz</h6>
-              <p>Buse Cambaz</p>
-            </div>
-          </div>
-          <div class="button"><a href="#">Gecis Yap</a></div>
-        </div>
-
-        <div class="insta-suggestions">
-          <div class="follow-left">
-            <p>Senin Icin Oneriler</p>
-          </div>
-          <div class="buttons"><a href="#">Tümünü Gör</a></div>
-        </div>
-
-        <div class="insta-follow-header2">
-          <div class="follow-left">
-            <img src="images/kisi7.jpeg" />
-            <div class="insta-name">
-              <h6>sedefmese</h6>
-              <p>Instagram'da Yeni</p>
-            </div>
-          </div>
-          <div class="buttonn"><a href="#">Takip Et</a></div>
-        </div>
-
-        <div class="insta-follow-header2">
-          <div class="follow-left">
-            <img src="images/kisi8.jpeg" />
-            <div class="insta-name">
-              <h6>fadimevct</h6>
-              <p>Instagram'da Yeni</p>
-            </div>
-          </div>
-          <div class="buttonn"><a href="#">Takip Et</a></div>
-        </div>
-
-        <div class="insta-follow-header2">
-          <div class="follow-left">
-            <img src="images/kisi9.jpeg" />
-            <div class="insta-name">
-              <h6>mineaksun</h6>
-              <p>Instagram'da Yeni</p>
-            </div>
-          </div>
-          <div class="buttonn"><a href="#">Takip Et</a></div>
-        </div>
-
-        <div class="insta-follow-header2">
-          <div class="follow-left">
-            <img src="images/kisi10.jpeg" />
-            <div class="insta-name">
-              <h6>sdf.kalin</h6>
-              <p>Instagram'da Yeni</p>
-            </div>
-          </div>
-          <div class="buttonn"><a href="#">Takip Et</a></div>
-        </div>
-
-        <div class="insta-about">
-          <p>Hakkinda</p>
-          <p>Yardim</p>
-          <p>Basin</p>
-          <p>API</p>
-          <p>Is Firsatlari</p>
-          <p>Gizlilik</p>
-          <p>Kosullar</p>
-          <p>Konumlar</p>
-          <p>Dil</p>
-        </div>
-
-        <h6 class="meta">© 2022 INSTAGRAM FROM META</h6>
-      </article>
     </div>
+    <div id="instagram-page">
+      <header>
+        <img src="images/images.png" />
+        <i class="fa-regular fa-heart"></i>
+      </header>
+
+      <aside class="insta-home">
+        <img class="logo" src="images/images.png" />
+
+        <div class="insta-home-icons">
+          <div class="icons-box1">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+
+          <div class="icons-box">
+            <i class="fa-sharp fa-solid fa-house"></i>
+            <p>Ana Sayfa</p>
+          </div>
+
+          <div class="icons-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <p>Kesfet</p>
+          </div>
+
+          <div class="icons-box">
+            <i class="fa-regular fa-comment"></i>
+            <p>Mesajlar</p>
+          </div>
+
+          <div class="icons-box">
+            <i class="fa-regular fa-heart"></i>
+            <p>Bildirimler</p>
+          </div>
+
+          <div class="icons-box">
+            <i class="fa-regular fa-square-plus"></i>
+            <p>Olustur</p>
+          </div>
+
+          <div class="icons-box">
+            <img src="images/IMG_2599%20(1).png" />
+            <p>Profil</p>
+          </div>
+
+          <div class="icons-boxx">
+            <i class="fa-solid fa-bars"></i>
+            <p>Daha Fazla</p>
+          </div>
+        </div>
+      </aside>
+
+      <div class="row-container">
+        <div class="insta-container">
+          <div class="instagram-story-container">
+            <div class="instagram-story">
+              <div class="story1">
+                <img src="images/kisi1.jpeg " />
+                <p>aysuerturk</p>
+              </div>
+
+              <div class="story1">
+                <img src="images/kisi2.jpeg " />
+                <p>burcucetin</p>
+              </div>
+
+              <div class="story1">
+                <img src="images/kisi3.jpeg " />
+                <p>selinyurt</p>
+              </div>
+
+              <div class="story1">
+                <img src="images/kisi4.jpeg " />
+                <p>aysebelin</p>
+              </div>
+
+              <div class="story1">
+                <img src="images/kisi5.jpeg " />
+                <p>edaece</p>
+              </div>
+
+              <div class="story1">
+                <img src="images/kisi6.jpeg " />
+                <p>senemkeskin</p>
+              </div>
+
+              <div class="story1">
+                <img src="images/kisi7.jpeg " />
+                <p>busetturk</p>
+              </div>
+
+              <div class="story1">
+                <img src="images/kisi8.jpeg " />
+                <p>haleuygun</p>
+              </div>
+
+              <div class="story1">
+                <img src="images/kisi9.jpeg" />
+                <p>ozgemengi</p>
+              </div>
+
+              <div class="story1">
+                <img src="images/kisi10.jpeg " />
+                <p>ezgikoc</p>
+              </div>
+
+              <div class="story1">
+                <img src="images/kisi11.jpeg" />
+                <p>denizask</p>
+              </div>
+
+              <div class="story1">
+                <img src="images/kisi12.jpeg " />
+                <p>busrapekin</p>
+              </div>
+
+              <div class="story1">
+                <img
+                  src="images/Outfits%20épicos%20para%20tu%20regreso%20al%20exterior.jpeg "
+                />
+                <p>asliparali</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <article class="insta-box">
+              <div class="ins-navbar">
+                <div class="nav-person">
+                  <img src="images/kisi12.jpeg" />
+                  <h6>pelinsakklim</h6>
+                </div>
+                <div class="nav-options">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </div>
+              </div>
+
+              <svg
+                aria-hidden="true"
+                style="
+                  position: absolute;
+                  width: 0;
+                  height: 0;
+                  overflow: hidden;
+                "
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <defs>
+                  <symbol id="icon-heart" viewBox="0 0 32 32">
+                    <path
+                      d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"
+                    ></path>
+                  </symbol>
+                </defs>
+              </svg>
+
+              <div class="img-container">
+                <div class="post">
+                  <svg class="icon icon-heart">
+                    <use xlink:href="#icon-heart"></use>
+                  </svg>
+                  <img class="imgIcon" src="images/1.jpeg" />
+                </div>
+              </div>
+
+              <div class="insta-container-icons">
+                <div class="like">
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-regular fa-comment"></i>
+                  <i class="fa-regular fa-paper-plane open-plane-icon"></i>
+                </div>
+                <div class="save">
+                  <i class="fa-regular fa-bookmark"></i>
+                </div>
+              </div>
+
+              <div class="likes">
+                <img src="images/kisi1.jpeg" />
+                <p><b>kayacansu</b> ve <b>diger kisiler</b> begendi</p>
+              </div>
+
+              <div class="comment">
+                <p>673 yorumun tumunu gor</p>
+                <p class="before">2 SAAT ONCE</p>
+              </div>
+            </article>
+
+            <article class="insta-box">
+              <div class="ins-navbar">
+                <div class="nav-person">
+                  <img src="images/kisi11.jpeg" />
+                  <h6>pelinnaksuu</h6>
+                </div>
+                <div class="nav-options">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </div>
+              </div>
+
+              <div class="img-container">
+                <div class="post">
+                  <svg class="icon icon-heart">
+                    <use xlink:href="#icon-heart"></use>
+                  </svg>
+                  <img class="imgIcon" src="images/2.jpeg" />
+                </div>
+              </div>
+
+              <div class="insta-container-icons">
+                <div class="like">
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-regular fa-comment"></i>
+                  <i class="fa-regular fa-paper-plane open-plane-icon"></i>
+                </div>
+                <div class="save">
+                  <i class="fa-regular fa-bookmark"></i>
+                </div>
+              </div>
+
+              <div class="likes">
+                <img src="images/kisi4.jpeg" />
+                <p><b>yareturk</b> ve <b>diger kisiler</b> begendi</p>
+              </div>
+
+              <div class="comment">
+                <p>73 yorumun tumunu gor</p>
+                <p class="before">2 SAAT ONCE</p>
+              </div>
+            </article>
+
+            <article class="insta-box">
+              <div class="ins-navbar">
+                <div class="nav-person">
+                  <img src="images/kisi8.jpeg" />
+                  <h6>vaguemgzin</h6>
+                </div>
+                <div class="nav-options">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </div>
+              </div>
+
+              <div class="img-container">
+                <div class="post">
+                  <svg class="icon icon-heart">
+                    <use xlink:href="#icon-heart"></use>
+                  </svg>
+                  <img class="imgIcon" src="images/9.jpeg" />
+                </div>
+              </div>
+
+              <div class="insta-container-icons">
+                <div class="like">
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-regular fa-comment"></i>
+                  <i class="fa-regular fa-paper-plane open-plane-icon"></i>
+                </div>
+                <div class="save"><i class="fa-regular fa-bookmark"></i></div>
+              </div>
+
+              <div class="likes">
+                <img src="images/kisi12.jpeg" />
+                <p><b>rosiewhile</b> ve <b>diger kisiler</b> begendi</p>
+              </div>
+
+              <div class="comment">
+                <p>789 yorumun tumunu gor</p>
+                <p class="before">2 SAAT ONCE</p>
+              </div>
+            </article>
+
+            <article class="insta-box">
+              <div class="ins-navbar">
+                <div class="nav-person">
+                  <img src="images/kisi10.jpeg" />
+                  <h6>sevvalsikilaz</h6>
+                </div>
+                <div class="nav-options">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </div>
+              </div>
+
+              <div class="img-container">
+                <div class="post">
+                  <svg class="icon icon-heart">
+                    <use xlink:href="#icon-heart"></use>
+                  </svg>
+                  <img class="imgIcon" src="images/4.jpeg" />
+                </div>
+              </div>
+
+              <div class="insta-container-icons">
+                <div class="like">
+                  <i class="fa-regular fa-heart"></i>
+
+                  <i class="fa-regular fa-comment"></i>
+
+                  <i class="fa-regular fa-paper-plane open-plane-icon"></i>
+                </div>
+                <div class="save"><i class="fa-regular fa-bookmark"></i></div>
+              </div>
+
+              <div class="likes">
+                <img src="images/kisi9.jpeg" />
+                <p><b>yaseminn</b> ve <b>diger kisiler</b> begendi</p>
+              </div>
+
+              <div class="comment">
+                <p>15 yorumun tumunu gor</p>
+                <p class="before">2 SAAT ONCE</p>
+              </div>
+            </article>
+
+            <article class="insta-box">
+              <div class="ins-navbar">
+                <div class="nav-person">
+                  <img src="images/kisi9.jpeg" />
+                  <h6>gozdekucukler</h6>
+                </div>
+                <div class="nav-options">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </div>
+              </div>
+
+              <div class="img-container">
+                <div class="post">
+                  <svg class="icon icon-heart">
+                    <use xlink:href="#icon-heart"></use>
+                  </svg>
+                  <img class="imgIcon" src="images/5.png" />
+                </div>
+              </div>
+
+              <div class="insta-container-icons">
+                <div class="like">
+                  <i class="fa-regular fa-heart"></i>
+
+                  <i class="fa-regular fa-comment"></i>
+
+                  <i class="fa-regular fa-paper-plane open-plane-icon"></i>
+                </div>
+                <div class="save"><i class="fa-regular fa-bookmark"></i></div>
+              </div>
+
+              <div class="likes">
+                <img src="images/IMG_2599%20(1).png" />
+                <p><b>busecambaz</b> ve <b>diger kisiler</b> begendi</p>
+              </div>
+
+              <div class="comment">
+                <p>48 yorumun tumunu gor</p>
+                <p class="before">2 SAAT ONCE</p>
+              </div>
+            </article>
+
+            <article class="insta-box">
+              <div class="ins-navbar">
+                <div class="nav-person">
+                  <img src="images/kisi6.jpeg" />
+                  <h6>gizemcambaz</h6>
+                </div>
+                <div class="nav-options">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </div>
+              </div>
+
+              <div class="img-container">
+                <div class="post">
+                  <svg class="icon icon-heart">
+                    <use xlink:href="#icon-heart"></use>
+                  </svg>
+                  <img class="imgIcon" src="images/6.jpeg" />
+                </div>
+              </div>
+
+              <div class="insta-container-icons">
+                <div class="like">
+                  <i class="fa-regular fa-heart"></i>
+
+                  <i class="fa-regular fa-comment"></i>
+
+                  <i class="fa-regular fa-paper-plane open-plane-icon"></i>
+                </div>
+                <div class="save"><i class="fa-regular fa-bookmark"></i></div>
+              </div>
+
+              <div class="likes">
+                <img src="images/kisi4.jpeg" />
+                <p><b>asyakorkmaz</b> ve <b>diger kisiler</b> begendi</p>
+              </div>
+
+              <div class="comment">
+                <p>27 yorumun tumunu gor</p>
+                <p class="before">2 SAAT ONCE</p>
+              </div>
+            </article>
+
+            <article class="insta-box">
+              <div class="ins-navbar">
+                <div class="nav-person">
+                  <img src="images/kisi3.jpeg" />
+                  <h6>sultanbakir</h6>
+                </div>
+                <div class="nav-options">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </div>
+              </div>
+
+              <div class="img-container">
+                <div class="post">
+                  <svg class="icon icon-heart">
+                    <use xlink:href="#icon-heart"></use>
+                  </svg>
+                  <img class="imgIcon" src="images/kisi12.jpeg" />
+                </div>
+              </div>
+
+              <div class="insta-container-icons">
+                <div class="like">
+                  <i class="fa-regular fa-heart"></i>
+
+                  <i class="fa-regular fa-comment"></i>
+
+                  <i class="fa-regular fa-paper-plane open-plane-icon"></i>
+                </div>
+                <div class="save"><i class="fa-regular fa-bookmark"></i></div>
+              </div>
+
+              <div class="likes">
+                <img src="images/kisi2.jpeg" />
+                <p><b>ezgibaris</b> ve <b>diger kisiler</b> begendi</p>
+              </div>
+
+              <div class="comment">
+                <p>112 yorumun tumunu gor</p>
+                <p class="before">2 SAAT ONCE</p>
+              </div>
+            </article>
+
+            <article class="insta-box">
+              <div class="ins-navbar">
+                <div class="nav-person">
+                  <img src="images/kisi5.jpeg" />
+                  <h6>yaseminklaz</h6>
+                </div>
+                <div class="nav-options">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </div>
+              </div>
+
+              <div class="img-container">
+                <div class="post">
+                  <svg class="icon icon-heart">
+                    <use xlink:href="#icon-heart"></use>
+                  </svg>
+                  <img class="imgIcon" src="images/8.jpeg" />
+                </div>
+              </div>
+
+              <div class="insta-container-icons">
+                <div class="like">
+                  <i class="fa-regular fa-heart"></i>
+
+                  <i class="fa-regular fa-comment"></i>
+
+                  <i class="fa-regular fa-paper-plane open-plane-icon"></i>
+                </div>
+                <div class="save"><i class="fa-regular fa-bookmark"></i></div>
+              </div>
+
+              <div class="likes">
+                <img src="images/kisi11.jpeg" />
+                <p><b>ravzaklz</b> ve <b>diger kisiler</b> begendi</p>
+              </div>
+
+              <div class="comment">
+                <p>73 yorumun tumunu gor</p>
+                <p class="before">2 SAAT ONCE</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <article class="insta-follow">
+          <div class="insta-follow-header">
+            <div class="follow-left">
+              <img src="images/IMG_2599%20(1).png" />
+              <div class="insta-name">
+                <h6>busecambaz</h6>
+                <p>Buse Cambaz</p>
+              </div>
+            </div>
+            <div class="button"><a href="#">Gecis Yap</a></div>
+          </div>
+
+          <div class="insta-suggestions">
+            <div class="follow-left">
+              <p>Senin Icin Oneriler</p>
+            </div>
+            <div class="buttons"><a href="#">Tümünü Gör</a></div>
+          </div>
+
+          <div class="insta-follow-header2">
+            <div class="follow-left">
+              <img src="images/kisi7.jpeg" />
+              <div class="insta-name">
+                <h6>sedefmese</h6>
+                <p>Instagram'da Yeni</p>
+              </div>
+            </div>
+            <div class="buttonn"><a href="#">Takip Et</a></div>
+          </div>
+
+          <div class="insta-follow-header2">
+            <div class="follow-left">
+              <img src="images/kisi8.jpeg" />
+              <div class="insta-name">
+                <h6>fadimevct</h6>
+                <p>Instagram'da Yeni</p>
+              </div>
+            </div>
+            <div class="buttonn"><a href="#">Takip Et</a></div>
+          </div>
+
+          <div class="insta-follow-header2">
+            <div class="follow-left">
+              <img src="images/kisi9.jpeg" />
+              <div class="insta-name">
+                <h6>mineaksun</h6>
+                <p>Instagram'da Yeni</p>
+              </div>
+            </div>
+            <div class="buttonn"><a href="#">Takip Et</a></div>
+          </div>
+
+          <div class="insta-follow-header2">
+            <div class="follow-left">
+              <img src="images/kisi10.jpeg" />
+              <div class="insta-name">
+                <h6>sdf.kalin</h6>
+                <p>Instagram'da Yeni</p>
+              </div>
+            </div>
+            <div class="buttonn"><a href="#">Takip Et</a></div>
+          </div>
+
+          <div class="insta-about">
+            <p>Hakkinda</p>
+            <p>Yardim</p>
+            <p>Basin</p>
+            <p>API</p>
+            <p>Is Firsatlari</p>
+            <p>Gizlilik</p>
+            <p>Kosullar</p>
+            <p>Konumlar</p>
+            <p>Dil</p>
+          </div>
+
+          <h6 class="meta">© 2022 INSTAGRAM FROM META</h6>
+        </article>
+      </div>
+    </div>
+
     <script src="app.js"></script>
   </body>
 </html>

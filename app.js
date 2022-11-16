@@ -2,6 +2,44 @@ const img = document.getElementsByClassName("imgIcon");
 const icon = document.getElementsByClassName("icon");
 const bookmark = document.getElementsByClassName("fa-bookmark");
 const heart = document.querySelectorAll(".insta-box .fa-heart");
+const checkBoxs = document.getElementsByClassName("input");
+const submit = document.getElementById("button-submit");
+const closeBtn = document.querySelector("#close-btn");
+const openPlane = document.querySelectorAll(".open-plane-icon");
+const modal = document.querySelector(".modal-container");
+
+function toggleModal() {
+  modal.classList.toggle("show-modal");
+}
+
+closeBtn.addEventListener("click", () => {
+  toggleModal();
+});
+
+submit.addEventListener("click", () => {
+  toggleModal();
+});
+
+for (let i = 0; i < openPlane.length; i++) {
+  openPlane[i].addEventListener("click", () => {
+    toggleModal();
+  });
+}
+
+for (let i = 0; i < checkBoxs.length; i++) {
+  checkBoxs[i].addEventListener("click", function () {
+    const values = Array.prototype.map.call(checkBoxs, (item) => item.checked);
+    console.log(values);
+    const isAllUnchecked = values.every((item) => item === false);
+
+    if (isAllUnchecked) {
+      submit.disabled = true;
+      return;
+    }
+
+    submit.disabled = false;
+  });
+}
 
 function changeHeart(heart) {
   heart.classList.toggle("fa-duotone");

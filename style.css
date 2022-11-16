@@ -14,6 +14,152 @@ body {
   user-select: none;
 }
 
+.modal-container {
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.show-modal {
+  display: flex;
+}
+
+.modal {
+  width: 550px;
+  border: 1px solid lightgray;
+  border-radius: 12px;
+  background-color: #fff;
+  height: auto;
+}
+
+.modal-share .modal-share-header {
+  width: 100%;
+  height: 3rem;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.modal-share h5 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: auto;
+}
+
+.modal-share .fa-xmark {
+  font-size: 2rem;
+  cursor: pointer;
+  padding-right: 1rem;
+  color: #252121;
+}
+
+.modal-person {
+  width: 100%;
+  height: 5rem;
+  border-bottom: 1px solid lightgray;
+  padding: 0.6rem;
+}
+
+.modal-person h4 {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.modal-person input {
+  border: none;
+  font-size: 0.9rem;
+  padding-left: 0.7rem;
+  padding-top: 0.5rem;
+}
+
+.modal-person input:focus {
+  outline: none;
+}
+
+.modal-person input::placeholder {
+  color: lightgray;
+}
+
+.suggestion {
+  padding: 0.5rem 1rem;
+}
+
+.suggestion p {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #252121;
+  padding-top: 0.7rem;
+}
+
+.suggestions-header {
+  overflow-y: auto;
+  height: 45vh;
+}
+
+.suggestions-header .insta-follow-header2 {
+  padding: 0.6rem 1rem;
+}
+
+.suggestions-header .insta-follow-header2 img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+}
+
+.suggestions-header .insta-follow-header2 input {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 2px solid #252121;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  margin-right: 0.3rem;
+}
+
+.suggestions-header .insta-follow-header2 input:checked {
+  appearance: auto;
+  clip-path: circle(50% at 50% 50%);
+  background-color: #0095f6;
+}
+
+.modal-submit {
+  width: 100%;
+  height: 5rem;
+  border-top: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-submit button {
+  width: 95%;
+  height: 2.8rem;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #0095f6;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+#button-submit:disabled {
+  background-color: #0095f6;
+  opacity: 0.5;
+  cursor: default;
+}
 header {
   width: 100%;
   height: 3rem;
@@ -259,6 +405,9 @@ header .fa-heart {
 .fa-comment:hover {
   color: gray;
 }
+.like i {
+  cursor: pointer;
+}
 
 /* =============== ANIMATION ===============*/
 .post {
@@ -495,6 +644,9 @@ header .fa-heart {
   .img-container img {
     height: 500px;
   }
+}
+
+@media screen and (max-width: 700px) {
 }
 
 @media screen and (min-width: 780px) {
